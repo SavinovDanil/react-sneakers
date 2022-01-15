@@ -30,6 +30,15 @@ header {
 .search-block {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
+  position: relative;
+
+  .clear {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+  }
 
   input {
     border: none;
