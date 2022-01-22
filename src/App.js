@@ -128,7 +128,7 @@ function App() {
 
         <Routes>
           <Route
-            path=""
+            path="react-sneakers"
             exact
             element={
               <Home
