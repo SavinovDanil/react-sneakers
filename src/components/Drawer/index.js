@@ -47,7 +47,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
           Корзина
           <img
             onClick={onClose}
-            src="/img/btn-remove.svg"
+            src="img/btn-remove.svg"
             alt="Закрыть"
             className="removeBtn cu-p"
           />
@@ -66,7 +66,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                     <b>{obj.price} руб.</b>
                   </div>
                   <img
-                    src="/img/btn-remove.svg"
+                    src="img/btn-remove.svg"
                     alt="Remove"
                     className="removeBtn"
                     onClick={() => onRemove(obj.id)}
@@ -89,7 +89,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
               </ul>
               <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
                 Оформить заказ
-                <img src="/img/arrow.svg" alt="" />
+                <img src="img/arrow.svg" alt="" />
               </button>
             </div>
           </div>
@@ -101,14 +101,14 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                 ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
                 : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
             }
-            image={isOrderComplete ? '/img/complete-order.png' : '/img/empty-cart.jpg'}
+            image={isOrderComplete ? 'img/complete-order.png' : 'img/empty-cart.jpg'}
           />
           // <div className="cartEmpty d-flex align-center flex-column flex justify-center ">
-          //   <img width={120} height={120} src="/img/empty-cart.jpg" alt="Empty Cart" />
+          //   <img width={120} height={120} src="img/empty-cart.jpg" alt="Empty Cart" />
           //   <h2> Корзина пустая</h2>
           //   <p className="opacity-6">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</p>
           //   <button onClick={onClose} className="greenButton">
-          //     <img src="/img/arrow.svg" alt="Arrow" />
+          //     <img src="img/arrow.svg" alt="Arrow" />
           //     Вернуться назад
           //   </button>
           // </div>
